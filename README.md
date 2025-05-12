@@ -1,1 +1,1 @@
-Din pacate doar cel .zip are tot codul, din folderul,care nu are .zip/.rar, nu ma lasa sa adaug 2 fisiere 
+Din pacate doar cel .zip/.rar are tot codul, folderul fara .zip/.rar nu ma lasa sa adaug 2 fisiere 
