@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- bara de navigare -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="myApp/img/WhatsApp Image 2024-11-23 at 15.27.05_448c180a.jpg" alt="missing logo ..."
+                    width="100px" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" aria-current="page" href="home">Home</a>
+                    <a class="nav-link" aria-current="info" href="info">Info</a>
+                    <a class="nav-link" href="contact">Contact</a>
+                    <a class="nav-link" href="about">About</a>
+                    <a class="nav-link" href="cos">Cos</a>
+                </div>
+
+                <!-- Log-out -->
+                <a href="logout" class="ms-auto"><strong>Log-out</strong></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Subtitlu -->
+    <div class="text-center">
+        <h1 class="display-2">
+            <strong>- - Specificatiile H2R - -</strong>
+        </h1>
+    </div>
+
+    <!-- Private contect -->
+    <div class="container mt-5">
+        <div class="text-center">
+            {{privateMainContent}}
+        </div>
+    </div>
+
+    <!-- Carousel cu poze -->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2500">
+                <img src="myApp/img/kawasaki-ninja-h2r-slant-rear-view-full-image-969245.avif" class="d-block w-100"
+                    alt="missing">
+            </div>
+            <div class="carousel-item" data-bs-interval="2500">
+                <img src="myApp/img/kawasaki-ninja-h2r.avif" class="d-block w-100" alt="missing">
+            </div>
+            <div class="carousel-item" data-bs-interval="2500">
+                <img src="myApp/img/images.jpeg" class="d-block w-100" alt="missing">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Specificatiile insine -->
+    <!-- Buton pentru Motor -->
+    <button type="button" class="btn btn-dark col-2" data-bs-toggle="modal"
+        data-bs-target="#modalMotor"><strong>Motor</strong></button>
+    <div id="modalMotor" class="modal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><strong>Kawasaki Ninja H2R '25 - Motor</strong></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="fw-bold">Motor:</p>
+                            <h6>4 cilindri, 4 timpi, 16 valve, DOHC, cu supercharger</h6>
+                            <p class="fw-bold">Putere:</p>
+                            <h6>310 CP</h6>
+                            <p class="fw-bold">Capacitate:</p>
+                            <h6>998 cmc</h6>
+                            <p class="fw-bold">Combustibil:</p>
+                            <h6>Benzină</h6>
+                            <p class="fw-bold">Cutie de viteze:</p>
+                            <h6>6 viteze, marsarier</h6>
+                            <p class="fw-bold">Rezervor:</p>
+                            <h6>17l</h6>
+                            <p class="fw-bold">Racire:</p>
+                            <h6>lichid</h6>
+                            <p class="fw-bold">Sistem pornire:</p>
+                            <h6>electric</h6>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <img src="myApp/img/kawasaki-ninja-h2r-j_0wEwN_1727942243.webp" class="img-fluid"
+                                alt="Kawasaki Ninja H2R '25">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal"><strong>Close</strong></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Buton pentru Mecanica -->
+    <button type="button" class="btn btn-success col-2" data-bs-toggle="modal"
+        data-bs-target="#modalMecanica"><strong>Mecanica</strong></button>
+    <div id="modalMecanica" class="modal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><strong>Kawasaki Ninja H2R '25 - Mecanica</strong></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="fw-bold">Suspensie fata:</p>
+                            <h6>furca inversa 43mm reglabila</h6>
+                            <p class="fw-bold">Suspensie spate:</p>
+                            <h6>Uni-Trak</h6>
+                            <p class="fw-bold">Frana fata:</p>
+                            <h6>2 discuri 330mm, semi-flotante, etriere cu 4 pistoane</h6>
+                            <p class="fw-bold">Frana spate:</p>
+                            <h6>1 disc 250mm, etrier Brembo cu 2 pistoane</h6>
+                            <p class="fw-bold">Anvelopa fata:</p>
+                            <h6>120/600 R17</h6>
+                            <p class="fw-bold">Anvelopa spate:</p>
+                            <h6>190/650 R17</h6>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <img src="myApp/img/kawasaki-ninja-h2r-j_0wEwN_1727942243.webp" class="img-fluid"
+                                alt="Kawasaki Ninja H2R '25">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal"><strong>Close</strong></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Buton pentru Dimensiuni -->
+    <button type="button" class="btn btn-dark col-2" data-bs-toggle="modal"
+        data-bs-target="#modalDimensiuni"><strong>Dimensiuni</strong></button>
+    <div id="modalDimensiuni" class="modal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><strong>Kawasaki Ninja H2R '25 - Dimensiuni</strong></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="fw-bold">Lungime:</p>
+                            <h6>2070 mm</h6>
+                            <p class="fw-bold">Latime:</p>
+                            <h6>850 mm</h6>
+                            <p class="fw-bold">Inaltime:</p>
+                            <h6>1160 mm</h6>
+                            <p class="fw-bold">Greutate:</p>
+                            <h6>216 KG</h6>
+                            <p class="fw-bold">Inaltimea sa:</p>
+                            <h6>830 mm</h6>
+                            <p class="fw-bold">Garda la sol:</p>
+                            <h6>130 mm</h6>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <img src="myApp/img/kawasaki-ninja-h2r-j_0wEwN_1727942243.webp" class="img-fluid"
+                                alt="Kawasaki Ninja H2R '25">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal"><strong>Close</strong></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Buton pentru General -->
+    <button type="button" class="btn btn-success col-2" data-bs-toggle="modal"
+        data-bs-target="#modalGeneral"><strong>General</strong></button>
+    <div id="modalGeneral" class="modal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><strong>Kawasaki Ninja H2R '25 - General</strong></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="fw-bold">Inmatriculabil:</p>
+                            <h6 style="color: red;"><strong>NU</strong></h6>
+                            <p class="fw-bold">An:</p>
+                            <h6>2025</h6>
+                            <p class="fw-bold">Culori:</p>
+                            <h6>Mirrir Coated Matte Spark Black</h6>
+                            <p class="fw-bold">Categorie Permis:</p>
+                            <h6 style="color: green;"><strong>A</strong></h6>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <img src="myApp/img/kawasaki-ninja-h2r-j_0wEwN_1727942243.webp" class="img-fluid"
+                                alt="Kawasaki Ninja H2R '25">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal"><strong>Close</strong></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark">
+        <div class="container-fluid text-white">
+            <div>
+                <p class="text-center">
+                    <strong>- - Kawasaki - -</strong>
+                </p>
+            </div>
+            <ul>
+                <li><a href="testdrive"
+                        style="text-decoration: none; color: #48ff00; transition: color 0.3s, border-bottom 0.3s; border-bottom: 2px solid transparent;">Test
+                        Drive</a></li>
+                <li><a href="contact"
+                        style="text-decoration: none; color: #48ff00; transition: color 0.3s, border-bottom 0.3s; border-bottom: 2px solid transparent;">Contact</a>
+                </li>
+                <li><a href="cos"
+                        style="text-decoration: none; color: #48ff00; transition: color 0.3s, border-bottom 0.3s; border-bottom: 2px solid transparent;">Cos</a>
+                </li>
+                <li><a href="#"
+                        style="text-decoration: none; color: #48ff00; transition: color 0.3s, border-bottom 0.3s; border-bottom: 2px solid transparent;">...</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
